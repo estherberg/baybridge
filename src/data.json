@@ -1,0 +1,15 @@
+[
+  {
+    "product": "Computer", "price": 400, "quantity": 5, "priceForAll": 15 , "Link": "https://www.pcworld.com/wp-content/uploads/2022/08/dscf0453_final-100797561-orig-1.jpg?resize=1240%2C697&quality=50&strip=all"
+  },
+  {
+    "product": "Smartphone", "price": 200, "quantity": 8,"priceForAll": 32 ,"Link": "https://hotstore.hotmobile.co.il/media/catalog/product/cache/a73c0d5d6c75fbb1966fe13af695aeb7/h/6/h69116190_pics_1000x100016_sm-a235_galaxy_a23_lte_black_front.png"
+  },
+  {
+    "product": "Screen", "price": 250, "quantity": 7,"priceForAll": 35 ,"Link":"https://5.imimg.com/data5/MA/CS/MY-48884629/touch-screen-moniter-500x500.jpg"
+  },
+  {
+    "product": "HDMI", "price": 30, "quantity": 6,"priceForAll": 24 ,"Link":"https://media.digikey.com/Photos/Tripplite%20Photos/MFG_P580-009-8K6.jpg"
+  }
+
+]
