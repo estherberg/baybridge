@@ -15,7 +15,6 @@ import {
 } from "mdb-react-ui-kit";
 import React, { useEffect, useState } from "react";
 import data from "./data.json";
-// const fs = require('fs');
 
 export default function App() {
   const [products, setProducts] = useState(data);
@@ -49,15 +48,6 @@ export default function App() {
     },
     [products]
   );
-
-  //Test fuction fs to write on data.json
-  // const storeData = (data, path) => {
-  //     try {
-  //         fs.writeFile(path, JSON.stringify(data))
-  //     } catch (err) {
-  //         console.error(err)
-  //     }
-  // }
 
   return (
     <section className="h-100 gradient-custom">
@@ -135,10 +125,6 @@ export default function App() {
                 <MDBBtn
                   block
                   size="lg"
-                  // //Test fuction fs to write on data.json
-                  //       onClick={()=>{
-                  //      storeData(JSON.stringify(products), './data.json')
-                  //  }}
                 >
                   Save
                 </MDBBtn>
