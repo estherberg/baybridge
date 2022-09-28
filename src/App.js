@@ -169,7 +169,7 @@ export default function App() {
                         <p>
                           <strong>
                             <div className={"item"}>
-                              <span className={"item_title"}>Produit:</span>{" "}
+                              <span className={"item_title"}>Product:</span>{" "}
                               {item.product}{" "}
                             </div>
                           </strong>
