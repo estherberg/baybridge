@@ -14,14 +14,15 @@ import {
   MDBTypography,
 } from "mdb-react-ui-kit";
 import React, { useEffect, useState } from "react";
-import data from "./data.json";
+import data from "./data.json";  // Importing data from a JSON file
 
 export default function App() {
-  const [products, setProducts] = useState(data);
+  const [products, setProducts] = useState(data);  // State variable to store the products data
   console.log("products", products);
 
-  const [sum, setSum] = useState(0);
+  const [sum, setSum] = useState(0);  // State variable to store the sum of prices
 
+  // useEffect hook to calculate the sum of products and update the sum state
   useEffect(() => {
     let sumOfProducts = 0;
     for (let item of products) {
@@ -35,19 +36,17 @@ export default function App() {
     }
   }, [products]);
 
-  useEffect(
-    (item) => {
-      setProducts((ps) =>
-        ps.map((item2) => {
-          return {
-            ...item2,
-            priceForAll: item2.quantity * item2.price,
-          };
-        })
-      );
-    },
-    [products]
-  );
+  // useEffect hook to update the priceForAll property for each product
+  useEffect(() => {
+    setProducts((ps) =>
+      ps.map((item2) => {
+        return {
+          ...item2,
+          priceForAll: item2.quantity * item2.price,
+        };
+      })
+    );
+  }, [products]);
 
   return (
     <section className="h-100 gradient-custom">
